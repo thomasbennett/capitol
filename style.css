@@ -1,0 +1,196 @@
+/*
+ * Theme Name: UMGN - Artist Theme 2
+ * Author: Thomas Bennett
+ * Author URI: http://thomasgbennett.com/
+ * Description: Base theme for Capitol Records artist websites.
+ * Version: 1.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: capitol
+ */
+
+/**
+ * Template
+ */
+
+
+h1 a, h2 a, h3 a, h4 a {
+    text-decoration: inherit;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+    z-index: 3;
+}
+
+.sub-menu { 
+    display: none;
+    line-height: 1.5;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.sub-menu li {
+    float: none;
+    width: 100%;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header .menu li {
+    display: inline-block;
+    float: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.home {
+    overflow: hidden;
+}
+
+.home footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.cycle-slideshow .slide,
+.cycle-slideshow .slide img {
+    width: 100%;
+}
+
+.blog-title {
+    text-align: left;
+}
+
+footer {
+    z-index: 999;
+}
+
+footer li {
+    display: inline-block;
+    float: left;
+}
+
+footer .social {
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+footer nav {
+    float: right;
+}
+
+.copyright {
+    clear: right;
+    float: right;
+}
+
+aside {
+    padding-bottom: 40px;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+}
+
+aside ul li {
+    list-style: none;
+}
+
+@media (max-width: 960px) {
+    header nav {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 840px) {
+    header nav {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    header nav {
+        background: url('images/mobile-nav.png') no-repeat;
+        min-height: 50px;
+        left: 41.66667%;
+        right: auto;
+    }
+
+    header nav .menu li {
+        display: none;
+        float: none;
+        width: 100%;
+
+    }
+
+    header nav:hover .menu li {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    header nav {
+        left: 15%;
+        right: auto;
+    }
+
+    header nav .menu {
+        margin-left: -160px !important;
+    }
+
+    .home footer {
+        position: relative;
+    }
+
+    footer nav,
+    footer .copyright {
+        float: none;
+        padding-top: 20px;
+    }
+
+    footer .copyright {
+        clear: both;
+        text-align: center;
+    }
+
+    footer nav li {
+        float: none;
+        margin-left: 0 !important;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    header .logo {
+        /*margin-top: -6px !important;*/
+    }
+}
+
+@media (max-width: 420px) {
+    header .logo {
+        /*margin-top: 2px !important;*/
+    }
+}

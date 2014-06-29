@@ -1,0 +1,243 @@
+/**
+ * Theme specific styles
+ */
+
+@font-face {
+    font-family: 'kill_em_allregular';
+    src: url('../fonts/kill_em_all-webfont.eot');
+    src: url('../fonts/kill_em_all-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kill_em_all-webfont.woff') format('woff'),
+         url('../fonts/kill_em_all-webfont.ttf') format('truetype'),
+         url('../fonts/kill_em_all-webfont.svg#kill_em_allregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #000 url('../images/background.jpg') 50% 50% no-repeat fixed;
+    color: #eee;
+    line-height: 1.4;
+}
+
+a {
+    color: #b19313;
+}
+
+a:hover {
+    color: #b19313;
+}
+
+h1, h2, h3 {
+    font-family: 'kill_em_allregular';
+}
+
+header {
+    background: #000;
+    box-shadow: 0px 1px 14px #444;
+    margin-top: 0px;
+    /**
+     * if the header sits against the top use position: relative;
+     * if it goes over the picture use: position: absolute; 
+     */
+    position: relative;
+}
+
+header .logo {
+    display: none;
+    max-width: 300px;
+    margin-top: -75px;
+    position: absolute;
+}
+
+header nav ul {
+    margin: 15px 0 0;
+    padding: 0;
+}
+
+header nav li {
+    margin-left: 0;
+    margin-right: 75px;
+}
+
+header nav li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav > ul > li > a {
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+header nav .menu li { 
+    font-size: 18px;
+}
+
+header nav .menu li.current-menu-item a { 
+    color: #b19313;
+}
+
+header nav .menu li a:hover { 
+    border-bottom: 2px solid #fff;
+    color: #b19313;
+    margin-bottom: 6px;
+    width: 180%;
+}
+
+.sub-menu {
+    background: #555;
+    margin-left: -60px;
+    text-align: center;
+    width: 40%;
+}
+
+.sub-menu li {
+    border-top: 1px solid #000;
+    font-size: 15px;
+    margin: 0;
+    padding: 3px 0;
+}
+
+.header-margin {
+    background: #000;
+    /* padding-top: 54px; */
+}
+
+.header-margin .cycle-slideshow {
+    /* this is a hack ... height of inner slideshow */
+    height: 334px !important;
+}
+
+.mailing-list {
+    color: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    float: right;
+    font-size: 11px;
+    padding: 2px 4px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer {
+    background: #000;
+}
+
+footer li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer nav {
+    text-transform: uppercase;
+}
+
+footer nav ul {
+    margin: 8px 0 0;
+}
+
+footer nav li {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+footer nav .menu {
+    float: right;
+}
+
+footer .social {
+    margin: 8px 0;
+    padding: 0 0.9375em;
+}
+
+footer .social a {
+    display: block;
+    height: 35px;
+    margin-right: 5px;
+    width: 35px;
+}
+
+footer .label_logo {
+    margin: 5px 0;
+    max-height: 44px;
+}
+
+.facebook { background: url('http://sites.umgnashville.com/artist_site_files/icons/facebook-icon.png') no-repeat; }
+.twitter { background: url('http://sites.umgnashville.com/artist_site_files/icons/twitter-icon.png') no-repeat; }
+.youtube { background: url('http://sites.umgnashville.com/artist_site_files/icons/youtube-icon.png') no-repeat; }
+.instagram { background: url('http://sites.umgnashville.com/artist_site_files/icons/instagram-icon.png') no-repeat; }
+.myspace { background: url('http://sites.umgnashville.com/artist_site_files/icons/facebook-icon.png') no-repeat; }
+.itunes { background: url('http://sites.umgnashville.com/artist_site_files/icons/facebook-icon.png') no-repeat; }
+.vimeo { background: url('http://sites.umgnashville.com/artist_site_files/icons/facebook-icon.png') no-repeat; }
+.other { background: url('http://sites.umgnashville.com/artist_site_files/icons/facebook-icon.png') no-repeat; }
+
+.copyright {
+    color: #fff;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+/**
+ * sub page specifics 
+ */
+.entry {
+    border-bottom: 1px solid #444;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+article h2 {
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 10px 0;
+    min-width: 15%;
+    text-transform: uppercase;
+}
+
+article h2 a:hover {
+    opacity: 0.8;
+}
+
+h2.blog-title {
+    border-bottom: 0;
+    font-family: 'Oswald';
+    font-size: 20px;
+    width: auto;
+}
+
+.right-title {
+    text-align: right;
+}
+
+.read-more {
+    font-family: 'Oswald';
+    font-size: 15px;
+}
+
+.entry a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+/**
+ * add page background
+ * .page-id-7 { background: url('../images/bio-bg.jpg') no-repeat top; }
+ */
+
+/**
+ * Bands In Town
+ */
+.bit-events,
+.bit-notify,
+.bit-track-artist-header, 
+.bit-events td, 
+.bit-events td a { 
+    font-family: 'Oswald' !important;
+}
+
